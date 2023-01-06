@@ -2,7 +2,7 @@ CREATE TABLE "users" (
   "id" bigserial PRIMARY KEY,
   "name" varchar NOT NULL,
   "email" varchar NOT NULL,
-  "password" varchar NOT NULL,
+  "hashed_password" varchar NOT NULL,
   "date_created" timestamptz NOT NULL DEFAULT (now()),
   "date_modified" timestamptz NOT NULL DEFAULT (now()),
   "account_balance" bigint NOT NULL DEFAULT 0

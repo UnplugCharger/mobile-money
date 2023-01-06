@@ -33,7 +33,7 @@ type User struct {
 	ID             int64     `json:"id"`
 	Name           string    `json:"name"`
 	Email          string    `json:"email"`
-	Password       string    `json:"password"`
+	HashedPassword string    `json:"hashed_password"`
 	DateCreated    time.Time `json:"date_created"`
 	DateModified   time.Time `json:"date_modified"`
 	AccountBalance int64     `json:"account_balance"`
